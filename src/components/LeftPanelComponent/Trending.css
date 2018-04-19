@@ -1,0 +1,36 @@
+.blankWhite {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightblue;
+    background: white;
+    display: flex;
+    padding: 15px;
+    line-height: inherit;
+  }
+  
+  .listModule {
+    background: white;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .listInner {
+    background: white;
+    background-color: inherit;
+    border: 0;
+    line-height: inherit;
+    padding: 0;
+  }
+  
+  .listTitle {
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+  }
+  
+  .listTitles {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

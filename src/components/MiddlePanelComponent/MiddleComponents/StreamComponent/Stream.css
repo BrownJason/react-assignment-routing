@@ -1,0 +1,47 @@
+.streamItems {
+    margin: auto;
+    padding-top: 15px;
+    background: white;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tweeters {
+    margin-left: 58px;
+  }
+
+  .header {
+    margin-top: 5px;
+  }
+
+
+.tweetImage {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.userTag {
+  color: #657786;
+  font-weight: lighter;
+}
+
+.tweetIcon {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  margin-top: 3px;
+  margin-left: -58px;
+  position: absolute;
+}
+
+.message {
+  margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+.topTimeline .tweetUser {
+    border-radius: 0;
+    position: relative;
+    padding: 10px 12px;
+  }
+  
+  .tweetUser {
+    background-color: lightblue;
+    padding: 10px 12px;
+    display: flex;
+  }
+
+  .t1FormTweet {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .t1FormTweet .textBox {
+    border-radius: 10px;
+    text-align: justify;
+    margin: 5px;
+    width: 100%;
+    top: 13px;
+  }
+
+  .avatarUser {
+    border-radius: 50%;
+    }
+
+    .size32 {
+        width: 32px;
+        height: 32px;
+      }

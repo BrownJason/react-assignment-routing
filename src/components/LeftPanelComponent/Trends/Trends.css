@@ -1,0 +1,42 @@
+
+  .listsList {
+    background: white;
+    font-size: 12px;
+  }
+  
+  .listsList ul {
+    background: white;
+    padding: 0;
+    list-style: none;
+    /* margin: 0 0 3px 0; */
+    margin-left: 10px;
+  }
+  
+  .lists {
+    background: white;
+    margin-top: -4px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .lists ul {
+    background: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .lists li {
+    list-style-type: none;
+    line-height: 17px;
+    margin: -12px 0 3px 0;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: inherit;
+  }
+  
+  .lists h4 {
+    color: blue;
+    height: 12px;
+    margin-bottom: -0.75em;
+  }
