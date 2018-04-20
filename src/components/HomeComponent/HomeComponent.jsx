@@ -8,6 +8,7 @@ import styles from './HomeComponent.css'
 import JessicaJones from '../../images/jessica-jones.jpg'
 import Marvel from '../../images/Marvel.png'
 import BlankSpace from '../../images/blank-space.jpg'
+import Cats from '../../images/cats.jpg'
 
 class HomeComponent extends Component {
   state = {
@@ -26,6 +27,11 @@ class HomeComponent extends Component {
         img: BlankSpace,
         h5: 'Chris Shivers',
         span: '@ChrisShiversTaySwiftfan101'
+      },
+      {
+        img: Cats,
+        h5: 'Will Marttala',
+        span: '@TheRealWill'
       }
     ],
 
