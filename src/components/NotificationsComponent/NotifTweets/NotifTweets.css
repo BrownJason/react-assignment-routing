@@ -1,0 +1,12 @@
+.t1FormTtweet {
+    width: 100%;
+  }
+  
+  .allOrMe li {
+    display: inline;
+    padding: 5px;
+  }
+
+  .buttonTweet {
+    color: blue;
+  }

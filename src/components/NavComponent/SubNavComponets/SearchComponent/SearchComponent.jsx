@@ -4,7 +4,7 @@ import styles from './Search.css'
 const searchComponent = () => (
   <Fragment>
     <form action='' className={`${styles.globalNav} ${styles.formSearch}`}>
-      <label for='searching' className={styles.hide}>Search</label>
+      <label htmlFor='searching' className={styles.hide}>Search</label>
       <input
         type='text'
         className={styles.searchInput}

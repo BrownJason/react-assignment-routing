@@ -35,8 +35,9 @@
 
 .tweetIcon {
   border-radius: 50%;
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
   margin-top: 3px;
   margin-left: -58px;
   position: absolute;

@@ -11,6 +11,11 @@
   position: relative;
   display: inline;
 }
+
+.Nav li Link {
+  position: relative;
+  display: inline;
+}
   
 .Nav li {
   display: inline;
