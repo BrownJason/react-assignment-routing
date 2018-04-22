@@ -10,7 +10,9 @@ import {
 const profileComponent = () => (
   <Fragment>
     <div className={`${profileBgContent} ${module}`}>
-      <a href='' className={profileBg}> <img src='' alt='' /></a>
+      <a href='https://twitter.com/jaybro1990' className={profileBg}>
+        <img src='' alt='' />
+      </a>
       <div className={profileContent}>
         <AvatarComponent />
       </div>

@@ -5,7 +5,7 @@ const iconToHome = () => (
   <Fragment>
     <ul className={navRight}>
       <li className='me'>
-        <a href='' className={btn} id={avatarBtn}>
+        <a href='https://twitter.com/jaybro1990' className={btn} id={avatarBtn}>
           <img
             className={navRightIcon}
             src={require('../../../../images/profilePic.jpeg')}

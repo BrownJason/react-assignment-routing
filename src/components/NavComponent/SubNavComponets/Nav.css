@@ -6,6 +6,10 @@
 .Nav a:link {
   text-decoration: none;
 }
+
+.Nav a:visited {
+  text-decoration: none;
+}
   
 .Nav li a {
   position: relative;

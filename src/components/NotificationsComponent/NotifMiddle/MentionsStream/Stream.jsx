@@ -3,37 +3,36 @@ import {
   streamItems,
   header,
   tweetIcon,
-  tweetImage,
   tweeters,
   userTag,
   bold,
-  message
+  message,
+  border
 } from '../../../MiddlePanelComponent/MiddleComponents/StreamComponent/Stream.css'
+import { Link } from 'react-router-dom'
 
 const streamComponentTwo = () => (
   <Fragment>
     <div className={streamItems}>
-      <div className={tweeters}>
-        <img
-          className={tweetIcon}
-          float='left'
-          src={require('../../../../images/profilePic.jpeg')}
-          alt=''
-        />
-        <div className={header}>
-          <span className={bold}>No help for you!</span>
-          <span className={userTag}> @NoOne · 5m</span>
-        </div>
-        <div className={message}>
-          <span>'Poop train' cleared</span>
-        </div>
-        <a href='https://www.nbcnews.com/news/us-news/poop-train-carrying-human-waste-cleared-after-months-squatting-alabama-n867426'>
+      <div className={border}>
+        <div className={tweeters}>
           <img
-            className={tweetImage}
-            src={require('../../../../images/poop-train.jpg')}
+            className={tweetIcon}
+            float='left'
+            src={require('../../../../images/profilePic.jpeg')}
             alt=''
           />
-        </a>
+          <div className={header}>
+            <span className={bold}>No help for you!</span>
+            <span className={userTag}> @NoOne · 5m</span>
+          </div>
+          <div className={message}>
+            <span>
+              Hey, did you ever figure out how to get the modal working with react?
+              <Link to='#'>@WillMarttala</Link>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </Fragment>

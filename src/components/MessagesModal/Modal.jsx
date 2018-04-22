@@ -6,6 +6,18 @@ class Modal extends Component {
     isModal: true
   }
 
+  previousLocation = this.props.location
+
+  componentWillUpdate (nextProps) {
+    const { location } = this.props
+    if (
+      nextProps.history.action !== 'POP' &&
+      (!location.state || !location.state.modal)
+    ) {
+      this.previousLocation = this.props.location
+    }
+  }
+
   onClose = () => {
     this.props.history.goBack()
   }

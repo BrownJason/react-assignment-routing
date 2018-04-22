@@ -1,29 +1,35 @@
 import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import {
-  tweetUser
+  tweetUser1
 } from '../../MiddlePanelComponent/MiddleComponents/TweetTimeline.css'
 
-import { t1FormTweet, allOrMe, buttonTweet } from './NotifTweets.css'
+import { allOrMe, buttonTweet, tweetTimeLine, active } from './NotifTweets.css'
 
 const notifTweets = () => (
   <Fragment>
-    <div className='tweetTimeline'>
-      <div className={tweetUser}>
-        <form action='' className={t1FormTweet}>
-          <ul className={allOrMe}>
-            <li id='all'>
-              <NavLink className={buttonTweet} to='/notifications'>
-                All
-              </NavLink>
-            </li>
-            <li id='me'>
-              <NavLink className={buttonTweet} to='/mentions'>
-                Mentions
-              </NavLink>
-            </li>
-          </ul>
-        </form>
+    <div className={tweetTimeLine}>
+      <div className={tweetUser1}>
+        <ul className={allOrMe}>
+          <li id='all'>
+            <NavLink
+              activeClassName={active}
+              className={buttonTweet}
+              to='/notifications'
+            >
+              All
+            </NavLink>
+          </li>
+          <li id='me'>
+            <NavLink
+              activeClassName='is-active'
+              className={buttonTweet}
+              to='/mentions'
+            >
+              Mentions
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </div>
   </Fragment>

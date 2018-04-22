@@ -9,7 +9,12 @@
     padding: 10px 12px;
     display: flex;
   }
-
+  
+  .tweetUser1 {
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+  }
   .t1FormTweet {
     width: 100%;
     margin-top: 10px;

@@ -14,21 +14,25 @@ class HomeComponent extends Component {
   state = {
     followerComponent: [
       {
+        link: 'https://twitter.com/JessicaJones',
         img: JessicaJones,
         h5: 'Jessica Jones',
         span: '@OfficalJessicaJones'
       },
       {
+        link: 'https://twitter.com/Marvel',
         img: Marvel,
         h5: 'Marvel Studios',
         span: '@MarvelStudios'
       },
       {
+        link: 'https://twitter.com/taylorswift13',
         img: BlankSpace,
         h5: 'Chris Shivers',
         span: '@ChrisShiversTaySwiftfan101'
       },
       {
+        link: 'https://twitter.com/wmarttala',
         img: Cats,
         h5: 'Will Marttala',
         span: '@TheRealWill'
@@ -37,12 +41,14 @@ class HomeComponent extends Component {
 
     trendingComponent: [
       {
-        h4Text: 'Some Trend',
-        pText: 'Some text of the trend'
+        link: 'https://twitter.com/hashtag/UFCAC?src=tren',
+        h4Text: '#UFCAC',
+        pText: 'Very important fights'
       },
       {
-        h4Text: 'Does that exist',
-        pText: 'Not sure, click to find out'
+        link: 'https://twitter.com/hashtag/1299ofBetter?src=ptrn',
+        h4Text: '#1299ofBetter',
+        pText: 'PapaJohns!'
       }
     ]
   }

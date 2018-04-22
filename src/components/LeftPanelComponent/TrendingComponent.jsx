@@ -24,6 +24,7 @@ class TrendingComponent extends Component {
               {this.props.trend.map(trends => (
                 <Trends
                   key={Math.random(Math.floor(10))}
+                  link={trends.link}
                   h4Text={trends.h4Text}
                   pText={trends.pText}
                 />

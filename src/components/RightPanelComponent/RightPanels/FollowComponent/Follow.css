@@ -7,11 +7,17 @@
     margin: 25px 0 0 0;
   }
 
+  .follow a {
+    display: flex;
+    text-decoration: none;
+  }
+
   .followers h5 {
       font-size: 18px;
       font-weight: bold;
       max-width: 100%;
       margin: -10px 0 0 0;
+      color: black;
       overflow: ellipsis!important;
       white-space: nowrap!important;
       word-wrap: normal!important;

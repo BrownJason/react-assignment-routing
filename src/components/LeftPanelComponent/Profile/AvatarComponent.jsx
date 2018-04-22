@@ -3,7 +3,10 @@ import { avatarLink, inlineBlocks, avatar, profileName } from './Avatar.css'
 
 const avatarComponent = () => (
   <Fragment>
-    <a className={`${avatarLink} ${inlineBlocks}`} href=''>
+    <a
+      className={`${avatarLink} ${inlineBlocks}`}
+      href='https://twitter.com/jaybro1990'
+    >
       <img
         className={avatar}
         src={require('../../../images/profilePic.jpeg')}

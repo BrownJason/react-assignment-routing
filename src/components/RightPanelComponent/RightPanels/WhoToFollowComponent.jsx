@@ -12,6 +12,7 @@ class WhoToFollowComponent extends Component {
           {this.props.follower.map(followers => (
             <FollowerComponent
               key={Math.random(Math.floor(10))}
+              link={followers.link}
               img={followers.img}
               h5={followers.h5}
               span={followers.span}

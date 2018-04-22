@@ -8,8 +8,10 @@ class Trends extends Component {
       <div className={listsList}>
         <ul className={lists}>
           <li>
-            <h4>{this.props.h4Text}</h4>
-            <p>{this.props.pText}</p>
+            <a href={`${this.props.link}`}>
+              <h4>{this.props.h4Text}</h4>
+              <p>{this.props.pText}</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -18,6 +20,7 @@ class Trends extends Component {
 }
 
 Trends.propTypes = {
+  link: PropTypes.string.isRequired,
   h4Text: PropTypes.string.isRequired,
   pText: PropTypes.string.isRequired
 }
