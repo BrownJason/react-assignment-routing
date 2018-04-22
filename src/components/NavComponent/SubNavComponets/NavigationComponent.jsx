@@ -3,8 +3,8 @@ import { Nav } from './Nav.css'
 import HomeComponent from '../../HomeComponent/HomeComponent'
 import { NavLink } from 'react-router-dom'
 import MomentsComponent from '../../MomentsComponent/MomentsComponent'
-import NotificationsComponent
-  from '../../NotificationsComponent/NotificaiontsComponent'
+// import NotificationsComponent
+//   from '../../NotificationsComponent/NotificaiontsComponent'
 
 class nagivationComponent extends Component {
   render () {
@@ -13,20 +13,20 @@ class nagivationComponent extends Component {
       <Fragment>
         <ul className={Nav}>
           <li>
-            <NavLink to='/' component={HomeComponent}>Home</NavLink>
+            <NavLink exact to='/' activeStyle={{ textDecoration: 'none', color: 'black'}} component={HomeComponent}>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/moments' component={MomentsComponent}>
+            <NavLink exact to='/moments' activeStyle={{ textDecoration: 'none', color: 'black'}} component={MomentsComponent}>
               Moments
             </NavLink>
           </li>
           <li>
-            <NavLink to='./notifications' component={NotificationsComponent}>
+            <NavLink to={'/notifications' || '/mentions'} activeStyle={{ textDecoration: 'none', color: 'black'}} component={HomeComponent}>
               Notifications
             </NavLink>
           </li>
           <li>
-            <NavLink to={{ pathname: location, state: { modal: true } }}>
+            <NavLink to={{ pathname: location, state: { modal: true } }} >
               Messages
             </NavLink>
           </li>

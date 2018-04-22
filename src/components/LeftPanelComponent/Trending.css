@@ -5,7 +5,6 @@
     border: 1px solid lightblue;
     background: white;
     display: flex;
-    padding: 15px;
     line-height: inherit;
   }
   
@@ -26,7 +25,7 @@
   .listTitle {
     line-height: 20px;
     margin-bottom: 10px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
   
   .listTitles {

@@ -4,10 +4,10 @@ import './App.css'
 import { Route, Switch } from 'react-router-dom'
 import NavComponent from './components/NavComponent/NavComponent'
 import MomentsComponent from './components/MomentsComponent/MomentsComponent'
-import NotificationsComponent
-  from './components/NotificationsComponent/NotificaiontsComponent'
-import MentionsComponent
-  from './components/NotificationsComponent/MentionsComponent'
+// import NotificationsComponent
+//   from './components/NotificationsComponent/NotificaiontsComponent'
+// import MentionsComponent
+//   from './components/NotificationsComponent/MentionsComponent'
 import Modal from './components/MessagesModal/Modal'
 import Container from './components/MessagesModal/Message'
 
@@ -41,9 +41,9 @@ class App extends Component {
           <Route
             exact
             path='/notifications'
-            component={NotificationsComponent}
+            component={HomeComponent}
           />
-          <Route path='/mentions' exact component={MentionsComponent} />
+          <Route exact path='/mentions' component={HomeComponent} />
 
           <Route
             path={`${location}`}

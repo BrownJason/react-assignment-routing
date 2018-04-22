@@ -9,6 +9,11 @@
 
 .Nav a:visited {
   text-decoration: none;
+  color: blue;
+}
+
+.Nav a:active {
+  color: black;
 }
   
 .Nav li a {
@@ -24,8 +29,4 @@
 .Nav li {
   display: inline;
    padding: 5px;
-}
-  
-.Nav a:hover {
-  border-bottom: 2px solid blue;
 }

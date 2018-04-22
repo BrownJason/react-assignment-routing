@@ -2,6 +2,9 @@ import React, { Component, Fragment } from 'react'
 import LeftComponent from '../LeftPanelComponent/LeftComponent'
 import MiddleComponent from '../MiddlePanelComponent/MiddleComponent'
 import RightComponent from '../RightPanelComponent/RightComponent'
+import MentionsMiddle from '../NotificationsComponent/NotifMiddle/MentionsMiddle'
+import NotifLeftPanel from '../NotificationsComponent/NotifLeftPanel/NotifLeftPanel'
+import NotifMiddle from '../NotificationsComponent/NotifMiddle/NotifMiddle'
 
 import styles from './HomeComponent.css'
 
@@ -28,7 +31,7 @@ class HomeComponent extends Component {
       {
         link: 'https://twitter.com/taylorswift13',
         img: BlankSpace,
-        h5: 'Chris Shivers',
+        h5: 'Chris Shivers - TSwift Fan',
         span: '@ChrisShiversTaySwiftfan101'
       },
       {
@@ -49,18 +52,48 @@ class HomeComponent extends Component {
         link: 'https://twitter.com/hashtag/1299ofBetter?src=ptrn',
         h4Text: '#1299ofBetter',
         pText: 'PapaJohns!'
+      },
+      {
+        link: 'https://twitter.com/hashtag/LivePD?src=tren',
+        h4Text: '#LivePD',
+        pText: '24.9K people talking'
+      },
+      {
+        link: 'https://twitter.com/hashtag/StarWarsHalf?src=tren',
+        h4Text: '#StarWarsHalf',
+        pText: 'STAR WARSSS!'
       }
     ]
   }
 
+  renderComponent() {
+    if(this.props.location.pathname === '/')
+    {
+      return(<Fragment>
+        <LeftComponent trend={this.state.trendingComponent} />
+        <MiddleComponent />
+      </Fragment>)
+    } else if(this.props.location.pathname === '/mentions') {
+      return(<Fragment>
+        <NotifLeftPanel trend={this.state.trendingComponent}/>
+        <MentionsMiddle />
+        </Fragment>)
+    } else if (this.props.location.pathname === '/notifications') {
+      return(<Fragment>
+        <NotifLeftPanel trend={this.state.trendingComponent}/>
+        <NotifMiddle />
+        </Fragment>)
+    }
+  }
+
   render () {
+    
     return (
       <Fragment>
         <div className={styles.outer}>
           <div className={styles.outerContent}>
             <div className={styles.container}>
-              <LeftComponent trend={this.state.trendingComponent} />
-              <MiddleComponent />
+              {this.renderComponent()} 
               <RightComponent follower={this.state.followerComponent} />
             </div>
           </div>

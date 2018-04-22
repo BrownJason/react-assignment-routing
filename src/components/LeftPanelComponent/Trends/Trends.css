@@ -8,8 +8,8 @@
     background: white;
     padding: 0;
     list-style: none;
-    /* margin: 0 0 3px 0; */
     margin-left: 10px;
+    width: 75%
   }
   
   .lists {

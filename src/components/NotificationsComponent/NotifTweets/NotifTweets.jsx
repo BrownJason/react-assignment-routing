@@ -15,7 +15,9 @@ const notifTweets = () => (
             <NavLink
               activeClassName={active}
               className={buttonTweet}
+              exact
               to='/notifications'
+              activeStyle={{ textDecoration: 'none', color: 'black'}}
             >
               All
             </NavLink>
@@ -24,7 +26,9 @@ const notifTweets = () => (
             <NavLink
               activeClassName='is-active'
               className={buttonTweet}
+              exact
               to='/mentions'
+              activeStyle={{ textDecoration: 'none', color: 'black'}}
             >
               Mentions
             </NavLink>
