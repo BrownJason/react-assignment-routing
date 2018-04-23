@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { whoToFollow } from './WhoToFollow.css'
 
 import FollowerComponent from './FollowComponent/FollowerComponent'
 
@@ -7,7 +8,7 @@ class WhoToFollowComponent extends Component {
   render () {
     return (
       <Fragment>
-        <div className='whoToFollow'>
+        <div className={whoToFollow}>
           <h3>Who to follow</h3>
           {this.props.follower.map(followers => (
             <FollowerComponent
