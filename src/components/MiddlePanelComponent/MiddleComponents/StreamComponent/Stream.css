@@ -54,3 +54,12 @@
 .message {
   margin-top: 10px;
 }
+
+.links {
+  color: blue;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: black;
+}

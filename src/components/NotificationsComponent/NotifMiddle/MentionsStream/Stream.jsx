@@ -7,7 +7,8 @@ import {
   userTag,
   bold,
   message,
-  border
+  border,
+  links
 } from '../../../MiddlePanelComponent/MiddleComponents/StreamComponent/Stream.css'
 const streamComponentTwo = () => (
   <Fragment>
@@ -27,7 +28,7 @@ const streamComponentTwo = () => (
           <div className={message}>
             <span>
               Hey, did you ever figure out how to get the modal working with react?
-              <a href='https://twitter.com/wmarttala' >@WillMarttala</a>
+              <a href='https://twitter.com/wmarttala' className={links}>@WillMarttala</a>
             </span>
           </div>
         </div>
