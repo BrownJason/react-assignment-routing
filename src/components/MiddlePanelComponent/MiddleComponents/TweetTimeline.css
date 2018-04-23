@@ -10,6 +10,10 @@
     display: flex;
     justify-content: center;
   }
+
+  .boxShadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
   
   .tweetUser1 {
     background-color: white;
@@ -40,7 +44,7 @@
     border-radius: 50%;
     }
 
-    .size32 {
-        width: 32px;
-        height: 32px;
-      }
+  .size32 {
+      width: 32px;
+      height: 32px;
+    }

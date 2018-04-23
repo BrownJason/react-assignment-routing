@@ -17,12 +17,13 @@
     top: 80px;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
-    width: 45vw;
     transform: none!important;
   }
   
   @media (min-width: 600px) {
     .Modal {
+        display: flex;
+        justify-content: center;
         width: 45vw;
         left: calc(50% - 22.25vw);
         border-radius: 15px;
@@ -32,9 +33,8 @@
 
   .modalContent {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    max-width: 100%;
-    min-width: 100%;
     overflow: hidden;
     position: relative;
     width: 45vw;

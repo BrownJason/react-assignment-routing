@@ -4,12 +4,13 @@ import {
   t1FormTweet,
   textBox,
   avatarUser,
-  size32
+  size32,
+  boxShadow
 } from './TweetTimeline.css'
 
 const tweetTimeline = () => (
   <Fragment>
-    <div className='tweetTimeline'>
+    <div className={boxShadow}>
       <div className={tweetUser}>
         <img
           className={`${tweetUser} ${avatarUser} ${size32}`}
@@ -23,6 +24,7 @@ const tweetTimeline = () => (
             placeholder='Need to say something?'
           />
           <i class='fa fa-smile-o' style={{marginLeft: '-30px', fontSize: '24px', marginTop: '5px', color: 'lightgrey'}}/>
+
         </form>
       </div>
     </div>
