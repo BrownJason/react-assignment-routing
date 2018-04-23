@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import WhoToFollowComponent from './RightPanels/WhoToFollowComponent';
-import { rightPanel, blankSpace1, copyRight } from './RightPanel.css';
+import React, { Fragment } from 'react'
+import WhoToFollowComponent from './RightPanels/WhoToFollowComponent'
+import { rightPanel, blankSpace1, copyRight } from './RightPanel.css'
 
 const rightComponent = props => (
   <Fragment>
@@ -19,6 +19,6 @@ const rightComponent = props => (
       </div>
     </div>
   </Fragment>
-);
+)
 
-export default rightComponent;
+export default rightComponent

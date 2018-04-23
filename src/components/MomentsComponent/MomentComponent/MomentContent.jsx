@@ -8,8 +8,8 @@ class Moments extends Component {
   render () {
     return (
       <Fragment>
-        <div class={moment}>
-          <div class={moment1Wrap}>
+        <div className={moment}>
+          <div className={moment1Wrap}>
             {this.props.moment.map(moments => (
               <EachMoment
                 key={Math.random(Math.floor(10))}

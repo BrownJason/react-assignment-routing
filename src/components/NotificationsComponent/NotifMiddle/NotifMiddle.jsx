@@ -4,11 +4,11 @@ import NotifTweets from '../NotifTweets/NotifTweets'
 import TweestsComponent
   from '../../MiddlePanelComponent/MiddleComponents/TweetsComponent'
 
-const notifMiddle = () => (
+const notifMiddle = props => (
   <Fragment>
     <div className={`${middlePanel} top-tweetTimeline`}>
-      <NotifTweets />
-      <TweestsComponent />
+      <NotifTweets tweeting={props.tweeting} change={props.change} />
+      <TweestsComponent tweet={props.tweet} />
     </div>
   </Fragment>
 )

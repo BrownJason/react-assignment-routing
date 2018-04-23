@@ -2,8 +2,10 @@ import React, { Component, Fragment } from 'react'
 import LeftComponent from '../LeftPanelComponent/LeftComponent'
 import MiddleComponent from '../MiddlePanelComponent/MiddleComponent'
 import RightComponent from '../RightPanelComponent/RightComponent'
-import MentionsMiddle from '../NotificationsComponent/NotifMiddle/MentionsMiddle'
-import NotifLeftPanel from '../NotificationsComponent/NotifLeftPanel/NotifLeftPanel'
+import MentionsMiddle
+  from '../NotificationsComponent/NotifMiddle/MentionsMiddle'
+import NotifLeftPanel
+  from '../NotificationsComponent/NotifLeftPanel/NotifLeftPanel'
 import NotifMiddle from '../NotificationsComponent/NotifMiddle/NotifMiddle'
 
 import styles from './HomeComponent.css'
@@ -12,6 +14,8 @@ import JessicaJones from '../../images/jessica-jones.jpg'
 import Marvel from '../../images/Marvel.png'
 import BlankSpace from '../../images/blank-space.jpg'
 import Cats from '../../images/cats.jpg'
+
+import axios from 'axios'
 
 class HomeComponent extends Component {
   state = {
@@ -63,37 +67,74 @@ class HomeComponent extends Component {
         h4Text: '#DarkSouls',
         pText: '· Death welcomes you'
       }
+    ],
+
+    tweetComponent: [
+      {
+        tweet: ''
+      }
     ]
   }
 
-  renderComponent() {
-    if(this.props.location.pathname === '/')
-    {
-      return(<Fragment>
-        <LeftComponent trend={this.state.trendingComponent} />
-        <MiddleComponent />
-      </Fragment>)
-    } else if(this.props.location.pathname === '/mentions') {
-      return(<Fragment>
-        <NotifLeftPanel trend={this.state.trendingComponent}/>
-        <MentionsMiddle />
-        </Fragment>)
+  componentDidMount () {
+    axios
+      .get('https://reactnetwork-fdc20.firebaseio.com/tweets.json')
+      .then(res => console.log(res.data))
+  }
+
+  handleTweetChange (e) {
+    const tweetComponent = this.state.tweetComponent
+    this.setState({ tweetComponent })
+  }
+
+  getTweet () {
+    console.log('Tweet: ' + this.state.tweetComponent)
+    const tweets = Object.keys(this.state.tweetComponent).map(value => value)
+    axios
+      .post('https://reactnetwork-fdc20.firebaseio.com/tweets.json', tweets)
+      .then(res => console.log(res.data))
+  }
+
+  renderComponent () {
+    if (this.props.location.pathname === '/') {
+      return (
+        <Fragment>
+          <LeftComponent trend={this.state.trendingComponent} />
+          <MiddleComponent
+            tweet={this.state.tweetComponent}
+            tweeting={this.getTweet}
+            change={this.handleTweetChange}
+          />
+        </Fragment>
+      )
+    } else if (this.props.location.pathname === '/mentions') {
+      return (
+        <Fragment>
+          <NotifLeftPanel trend={this.state.trendingComponent} />
+          <MentionsMiddle />
+        </Fragment>
+      )
     } else if (this.props.location.pathname === '/notifications') {
-      return(<Fragment>
-        <NotifLeftPanel trend={this.state.trendingComponent}/>
-        <NotifMiddle />
-        </Fragment>)
+      return (
+        <Fragment>
+          <NotifLeftPanel trend={this.state.trendingComponent} />
+          <NotifMiddle
+            tweet={this.state.tweetComponent}
+            tweeting={this.getTweet}
+            change={this.handleTweetChange}
+          />
+        </Fragment>
+      )
     }
   }
 
   render () {
-    
     return (
       <Fragment>
         <div className={styles.outer}>
           <div className={styles.outerContent}>
             <div className={styles.container}>
-              {this.renderComponent()} 
+              {this.renderComponent()}
               <RightComponent follower={this.state.followerComponent} />
             </div>
           </div>

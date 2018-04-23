@@ -8,7 +8,7 @@ import {
   boxShadow
 } from './TweetTimeline.css'
 
-const tweetTimeline = () => (
+const tweetTimeline = props => (
   <Fragment>
     <div className={boxShadow}>
       <div className={tweetUser}>
@@ -21,9 +21,11 @@ const tweetTimeline = () => (
           <input
             type='text'
             className={textBox}
+            value={props.value}
+            onChange={props.handleTweetChange}
             placeholder='Need to say something?'
           />
-          <i class='fa fa-smile-o' style={{marginLeft: '-30px', fontSize: '24px', marginTop: '5px', color: 'lightgrey'}}/>
+          <button type='button' onClick={props.getTweet}> Post</button>
 
         </form>
       </div>

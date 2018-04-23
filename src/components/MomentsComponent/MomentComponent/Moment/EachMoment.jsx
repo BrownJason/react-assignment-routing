@@ -6,10 +6,10 @@ class EachMoment extends Component {
   render () {
     return (
       <Fragment>
-        <div class={moment1}>
+        <div className={moment1}>
           <img src={`${this.props.img}`} alt='' />
         </div>
-        <div class={moment1Text}>
+        <div className={moment1Text}>
           <h3>{this.props.h3Text}</h3>
           <p>
             {this.props.pText}

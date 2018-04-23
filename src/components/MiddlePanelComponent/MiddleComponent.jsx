@@ -3,11 +3,11 @@ import TweetTimeline from './MiddleComponents/TweetTimeLineComponent'
 import TweestsComponent from './MiddleComponents/TweetsComponent'
 import { middlePanel } from './MiddlePanel.css'
 
-const middleComponent = () => (
+const middleComponent = props => (
   <Fragment>
     <div className={`${middlePanel} top-tweetTimeline`}>
-      <TweetTimeline />
-      <TweestsComponent />
+      <TweetTimeline tweeting={props.tweeting} change={props.change} />
+      <TweestsComponent tweet={props.tweet} />
     </div>
   </Fragment>
 )

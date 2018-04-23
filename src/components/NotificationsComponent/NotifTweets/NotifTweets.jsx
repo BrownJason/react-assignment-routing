@@ -17,7 +17,7 @@ const notifTweets = () => (
               className={buttonTweet}
               exact
               to='/notifications'
-              activeStyle={{ textDecoration: 'none', color: 'black'}}
+              activeStyle={{ textDecoration: 'none', color: 'black' }}
             >
               All
             </NavLink>
@@ -28,7 +28,7 @@ const notifTweets = () => (
               className={buttonTweet}
               exact
               to='/mentions'
-              activeStyle={{ textDecoration: 'none', color: 'black'}}
+              activeStyle={{ textDecoration: 'none', color: 'black' }}
             >
               Mentions
             </NavLink>
