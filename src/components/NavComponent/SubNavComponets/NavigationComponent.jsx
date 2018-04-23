@@ -13,21 +13,23 @@ class nagivationComponent extends Component {
       <Fragment>
         <ul className={Nav}>
           <li>
-            <NavLink exact to='/' activeStyle={{ textDecoration: 'none', color: 'black'}} component={HomeComponent}>Home</NavLink>
-          </li>
-          <li>
-            <NavLink exact to='/moments' activeStyle={{ textDecoration: 'none', color: 'black'}} component={MomentsComponent}>
-              Moments
+            <NavLink exact to='/' activeStyle={{ textDecoration: 'none', color: '#1c94e0'}} component={HomeComponent}>
+            <i class='fa fa-home'>  Home</i>
             </NavLink>
           </li>
           <li>
-            <NavLink to={'/notifications' || '/mentions'} activeStyle={{ textDecoration: 'none', color: 'black'}} component={HomeComponent}>
-              Notifications
+            <NavLink exact to='/moments' activeStyle={{ textDecoration: 'none', color: '#1c94e0'}} component={MomentsComponent}>
+              <i class='fa fa-star-o'>  Moments</i>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/notifications' || '/mentions'} activeStyle={{ textDecoration: 'none', color: '#1c94e0'}} component={HomeComponent}>
+            <i class='fa fa-bell-o'>  Notifications</i>
             </NavLink>
           </li>
           <li>
             <NavLink to={{ pathname: location, state: { modal: true } }} >
-              Messages
+             <i class='fa fa-envelope-o'>  Messages</i>
             </NavLink>
           </li>
         </ul>

@@ -46,22 +46,22 @@ class HomeComponent extends Component {
       {
         link: 'https://twitter.com/hashtag/UFCAC?src=tren',
         h4Text: '#UFCAC',
-        pText: 'Very important fights'
-      },
-      {
-        link: 'https://twitter.com/hashtag/1299ofBetter?src=ptrn',
-        h4Text: '#1299ofBetter',
-        pText: 'PapaJohns!'
+        pText: '· Very important fights'
       },
       {
         link: 'https://twitter.com/hashtag/LivePD?src=tren',
         h4Text: '#LivePD',
-        pText: '24.9K people talking'
+        pText: '· 24.9K people talking'
       },
       {
         link: 'https://twitter.com/hashtag/StarWarsHalf?src=tren',
         h4Text: '#StarWarsHalf',
-        pText: 'STAR WARSSS!'
+        pText: '· STAR WARSSS!'
+      },
+      {
+        link: 'https://twitter.com/hashtag/DarkSouls?src=hash',
+        h4Text: '#DarkSouls',
+        pText: '· Death welcomes you'
       }
     ]
   }

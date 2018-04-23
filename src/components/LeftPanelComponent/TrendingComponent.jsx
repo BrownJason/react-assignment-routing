@@ -18,7 +18,7 @@ class TrendingComponent extends Component {
             <div className={listInner}>
               <div className={listTitle}>
                 <h3>
-                  <span className={listTitles}>Some list</span>
+                  <span className={listTitles}>Trending Topics</span>
                 </h3>
               </div>
               {this.props.trend.map(trends => (

@@ -2,6 +2,10 @@
   text-align: left;
   float: left;
 }
+
+.Nav a {
+  color: grey;
+}
   
 .Nav a:link {
   text-decoration: none;
@@ -9,14 +13,10 @@
 
 .Nav a:visited {
   text-decoration: none;
-  color: blue;
-}
-
-.Nav a:active {
-  color: black;
+  color: grey;
 }
   
-.Nav li a {
+.Nav a {
   position: relative;
   display: inline;
 }

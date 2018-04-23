@@ -9,7 +9,7 @@
   }
   
  .globalNav {
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #4AB3F4;
     height: 49px;
     position: relative;
     width: 100%;
@@ -40,17 +40,4 @@
     text-align: center;
     position: relative;
     margin: 0 auto;
-  }
-
-  .coolIcon {
-    width: 32px;
-    height: 32px;
-   
-  }
-
-  .coolIcon img {
-    width: 32px;
-    height: 32px;
-    margin-left: -75px;
-    margin-top: 8px;
   }

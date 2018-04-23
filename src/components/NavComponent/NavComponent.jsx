@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
 import NavigationComponent from './SubNavComponets/NavigationComponent'
 import SearchBar from './SubNavComponets/SearchBarComponent'
-import styles, { coolIcon } from './NavComponet.css'
+import styles from './NavComponet.css'
+import WebPageIcon from './WebPageIcon/WebpageIcon'
 
 const navComponent = () => (
   <Fragment>
@@ -12,9 +13,7 @@ const navComponent = () => (
             <div role='navigation'>
               <NavigationComponent />
             </div>
-            <span className={coolIcon}>
-              <img src={require('../../images/cool-icon.jpg')} alt='' />
-            </span>
+            <WebPageIcon />
             <div className={`${styles.pullRight} ${styles.navExtras}`}>
               <SearchBar />
             </div>

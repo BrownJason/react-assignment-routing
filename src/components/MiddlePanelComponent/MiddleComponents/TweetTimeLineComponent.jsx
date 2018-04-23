@@ -20,8 +20,9 @@ const tweetTimeline = () => (
           <input
             type='text'
             className={textBox}
-            placeholder='Whatch thinking?'
+            placeholder='Need to say something?'
           />
+          <i class='fa fa-smile-o' style={{marginLeft: '-30px', fontSize: '24px', marginTop: '5px', color: 'lightgrey'}}/>
         </form>
       </div>
     </div>

@@ -50,7 +50,6 @@ class App extends Component {
             }}
           />
         </Switch>
-
         {isModal ? <Route component={Modal} /> : null}
       </div>
     )

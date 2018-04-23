@@ -36,13 +36,15 @@
   }
   
   .lists h4 {
-    color: blue;
-    height: 12px;
+    color: #4AB3F4;
+    font-size: 12pt;
     margin-bottom: -0.75em;
   }
 
   .lists p {
     color: black;
+    font-size: 10pt;
+    color: #66757f;
   }
 
   .lists a {
